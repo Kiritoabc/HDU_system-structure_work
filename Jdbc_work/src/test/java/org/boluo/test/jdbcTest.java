@@ -15,7 +15,6 @@ public class jdbcTest {
     Statement stmt = null;
     static final String DB_URL = "jdbc:mysql://localhost:3306/jdbc_test?useSSL=false&serverTimezone=UTC";
 
-
     // 数据库的用户名与密码，需要根据自己的设置
     static final String USER = "root";
     static final String PASS = "123456";
@@ -72,4 +71,73 @@ public class jdbcTest {
             throw new RuntimeException(e);
         }
     }
+
+    /**
+     *  jdbc添加测试
+     */
+    @Test
+    public void test3(){
+        // 连接
+        mysqlConn();
+        String sql = "insert into user(id,username,password) values(3,'测试3','123456')";
+
+        PreparedStatement ps = null;
+        try {
+            ps = conn.prepareStatement(sql);
+            ps.executeUpdate();
+            System.out.println("插入成功！");
+
+            System.out.println("插入结束！");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    /**
+     *  修改测试
+     */
+    @Test
+    public void test4(){
+        // 连接
+        mysqlConn();
+        PreparedStatement ps = null;
+        int id = 1;
+        // 使用 ? 作为占位符
+        String sql = "update user set username='修改1' where id = ?";
+        try {
+            // 使用 PreparedStatement 避免sql注入问题
+            ps = conn.prepareStatement(sql);
+            // 设置参数
+            ps.setObject(1,id);
+            // 执行更新
+            ps.executeUpdate();
+            System.out.println("更新成功");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    /**
+     *  删除测试
+     */
+    @Test
+    public void test5(){
+        mysqlConn();
+        int id = 3;
+        String sql = "delete from user where id = ?";
+        PreparedStatement ps = null;
+
+        try {
+            ps = conn.prepareStatement(sql);
+
+            ps.setObject(1,id);
+
+            int del = ps.executeUpdate();
+
+            System.out.println("删除成功,del = " + del);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 }
