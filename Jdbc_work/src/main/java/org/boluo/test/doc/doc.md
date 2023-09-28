@@ -7,11 +7,11 @@ public boolean register(UserBean usr){
  String sql=“insert into User(id,username,password) ”+” values(?,?,?)”;
 //sql=“select * from User where username=? and password=?”;
 try{
-PreparedStatement pstmt=conn.prepareStatement(sql);
-pstmt.setInt(1,usr.getId());
-pstmt.setString(2,usr.getUsername());
-pstmt.setPossword(3,usr.getPassword());
-pstmt.executeUpdate();
+    PreparedStatement pstmt=conn.prepareStatement(sql);
+    pstmt.setInt(1,usr.getId());
+    pstmt.setString(2,usr.getUsername());
+    pstmt.setPossword(3,usr.getPassword());
+    pstmt.executeUpdate();
 //ResultSet rs= pstmt.executeQuery();
 // while(rs.next()){  file:///Users/xu/Documents/课程/javaWeb/文档/2015-2016-1/     UserBean u=new UserBean();
      u.setId( rs.getInt (“id”) );
@@ -128,7 +128,7 @@ public void testCheck（）{
 }
 
 public void testLogin（）{
-
+ 
 }
 ~~~
 
