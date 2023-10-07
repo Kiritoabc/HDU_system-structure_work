@@ -16,7 +16,7 @@ public class DBUtil {
     static final String PASS = "123456";
 
     // 数据库驱动加载
-  public DBUtil(){
+   public DBUtil(){
         try {
             Class.forName(JDBC_DRIVER);
             System.out.println("数据库驱动加载成功");
@@ -34,4 +34,15 @@ public class DBUtil {
         }
         return conn;
     }
+
+    // 关闭数据库连接
+    public static void closeConn(Connection conn){
+        try {
+            conn.close();
+        } catch (SQLException e) {
+            System.out.println("数据库conn关闭失败");
+            throw new RuntimeException(e);
+        }
+    }
+
 }
