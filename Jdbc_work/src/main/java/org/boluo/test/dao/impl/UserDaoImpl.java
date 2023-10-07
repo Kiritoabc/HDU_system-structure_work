@@ -27,10 +27,12 @@ public class UserDaoImpl implements UserDao {
             // 执行
             int flag = pstmt.executeUpdate();
             pstmt.close();
-            conn.close();
             return flag == 1;
         } catch (SQLException e) {
             throw new RuntimeException(e);
+        }finally {
+            // 修改关闭操作
+            DBUtil.closeConn(conn);
         }
     }
 
@@ -54,10 +56,13 @@ public class UserDaoImpl implements UserDao {
                 return true;
             }
             pstmt.close();
-            conn.close();
+
             return false;
         } catch (SQLException e) {
             throw new RuntimeException(e);
+        }finally {
+            // 修改关闭操作
+            DBUtil.closeConn(conn);
         }
     }
 
@@ -85,10 +90,13 @@ public class UserDaoImpl implements UserDao {
                  return u;
             }
             pstmt.close();
-            conn.close();
+
             return null;
         } catch (SQLException e) {
             throw new RuntimeException(e);
+        } finally {
+            // 修改关闭操作
+            DBUtil.closeConn(conn);
         }
     }
 }
