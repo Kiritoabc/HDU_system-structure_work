@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <constant name="struts.devMode" value="true" />
+
+    <package name="struts2_name" extends="struts-default">
+        <action name="index">
+            <result>/index.jsp</result>
+        </action>
+
+        <action name="hello" class="org.boluo.test.helloworld.action.TestAction" method="execute">
+            <result name="success">/HelloWorld.jsp</result>
+        </action>
+
+        <action name="register" class="org.boluo.test.register.action.Register" method="execute">
+            <result name="success">/thankyou.jsp</result>
+            <result name="input">/register.jsp</result>
+        </action>
+    </package>
+
+
+</struts>

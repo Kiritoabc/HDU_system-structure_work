@@ -4,9 +4,7 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/jdbc_work/jdbc_work/pom.xml" />
-        <option value="$PROJECT_DIR$/Jdbc_work/pom.xml" />
-        <option value="$PROJECT_DIR$/struts2_work/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
