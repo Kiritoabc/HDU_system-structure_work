@@ -7,7 +7,7 @@
     <title>Basic Struts 2 Application - Welcome</title>
 </head>
 <body>
-    <h1>Welcome To Struts 2!</h1>
+    <h1><s:text name="greeting" /></h1>
     <p><a href="<s:url action='hello'/>">Hello World</a></p>
 
     <s:url action="hello" var="helloLink">
@@ -22,6 +22,16 @@
         <s:submit value="Submit" />
     </s:form>
 
-    <p><a href="register.jsp">Please register</a> for our prize drawing.</p>
+    <s:url action="registerInput" var="registerInputLink" />
+    <p><s:a href="%{registerInputLink}">Please register</s:a> for our prize drawing.</p>
+
+    <h3>Registro español</h3>
+    <s:url action="registerInput" var="registerInputLinkES">
+        <s:param name="request_locale">es</s:param>
+    </s:url>
+    <p><s:a href="%{registerInputLinkES}">Por favor, regístrese</s:a> para nuestro sorteo</p>
+
+    <hr />
+    <s:text name="contact" />
 </body>
 </html>
