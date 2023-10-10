@@ -31,9 +31,7 @@ mvn jetty:run
 # 如果报错，查看是否将 maven 加入环境变量。
 ~~~
 
-idea中maven启动，点击 jetty:run 即可启动 
-
-![1696920321113](D:\code\java_code\README.assets\1696920321113.png)
+或者idea中maven启动，点击 jetty:run 即可启动 
 
 2. 访问 [localhost:8080/hdu_struts2_work/login.jsp]() 页面即可
 
