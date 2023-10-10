@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true" />
+    <package name="hdu_struts2_work" extends="struts-default">
+
+        <action name="login" class="org.hdu.test.action.Login" method="execute">
+            <result name="SUCCESS">/WEB-INF/result/success.jsp</result>
+            <result name="fail">/WEB-INF/result/fail.jsp</result>
+        </action>
+
+    </package>
+
+
+</struts>

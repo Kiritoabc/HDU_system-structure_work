@@ -9,6 +9,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hdu_struts2_work" />
         <module name="struts2_work" />
         <module name="Jdbc_work" />
       </profile>
