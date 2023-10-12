@@ -37,4 +37,4 @@ mvn jetty:run
 
 
 
-## 如发现相关bug，欢迎提交pr，感谢。
+## 如发现相关bug，欢迎提交Issues或者pr，感谢。
