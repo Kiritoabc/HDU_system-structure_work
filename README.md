@@ -33,7 +33,7 @@ mvn jetty:run
 
 或者idea中maven启动，点击 jetty:run 即可启动 
 
-2. 访问 [localhost:8080/hdu_struts2_work/login.jsp]() 页面即可
+2. 访问 <127.0.0.1:8080/hdu_struts2_work/login.jsp> 页面即可
 
 
 
