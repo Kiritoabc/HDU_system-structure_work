@@ -25,4 +25,10 @@
             <message>age shoule be between ${min} to ${max}</message>
         </field-validator>
     </field>
+
+    <field name="birthday">
+        <field-validator type="required">
+            <message>required birthday</message>
+        </field-validator>
+    </field>
 </validators>

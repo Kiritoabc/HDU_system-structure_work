@@ -17,7 +17,7 @@ docker run -p 3306:3306 --name mysql -v E:/works/docker/mysql8.0/conf:/etc/mysql
 
 
 
-## **第二次作业:** 编写struts2相关的代码项目启动
+## **第二次作业和第三次作业:** 编写struts2相关的代码项目启动
 
 - 代码位于 **hdu_struts2_work** ,其中**struts2_work**为本人学习时的相关代码。
 
@@ -35,6 +35,6 @@ mvn jetty:run
 
 2. 访问 <127.0.0.1:8080/hdu_struts2_work/login.jsp> 页面即可
 
-
+3. 访问 <127.0.0.1:8080/hdu_struts2_work/register.jsp>页面即可
 
 ## 如发现相关bug，欢迎提交pr，感谢。

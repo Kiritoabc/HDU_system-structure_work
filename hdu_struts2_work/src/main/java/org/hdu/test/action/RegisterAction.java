@@ -50,5 +50,9 @@ public class RegisterAction extends ActionSupport {
             String msg = "用户名必须填";
             this.addFieldError("username",msg);
         }
+        if (password.length()<6){
+            String msg = "密码长度不能低于6位";
+            this.addFieldError("password",msg);
+        }
     }
 }
