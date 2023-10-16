@@ -12,7 +12,14 @@
             <result name="fail">/WEB-INF/result/fail.jsp</result>
         </action>
 
+        <action name="register" class="org.hdu.test.action.RegisterAction">
+            <result>/success.jsp</result>
+            <result name="input">/register.jsp</result>
+        </action>
+
     </package>
 
-
+<!--    <package name="example"  extends="struts-default">-->
+<!--      -->
+<!--    </package>-->
 </struts>
