@@ -17,6 +17,7 @@
         <s:password name="password" label="密码"/>
         <s:textfield name="age" label="年龄"/>
         <s:textfield name="birthday" label="出生日期"/>
+        <s:textfield name="email" label="邮箱" />
         <s:submit value="Submit"/>
 <%--        <input type="button" value=“注册“ onclick="validate()">--%>
     </s:form>
