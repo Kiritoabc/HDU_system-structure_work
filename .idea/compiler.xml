@@ -11,6 +11,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="hdu_struts2_work" />
         <module name="struts2_work" />
+        <module name="hibernate" />
         <module name="Jdbc_work" />
       </profile>
     </annotationProcessing>

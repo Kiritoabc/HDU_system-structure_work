@@ -34,7 +34,26 @@ mvn jetty:run
 或者idea中maven启动，点击 jetty:run 即可启动 
 
 2. 访问 <127.0.0.1:8080/hdu_struts2_work/login.jsp> 页面即可
-
 3. 访问 <127.0.0.1:8080/hdu_struts2_work/register.jsp>页面即可
 
+
+
+## 第四次作业：Hibernate的使用
+
+- 代码位于hibernate。
+
+暂时没有写测试代码，后面会于 Struts2，Spring整合，再进行测试。
+
+
+
+
+
+
+
+
+
+
 ## 如发现相关bug，欢迎提交pr，感谢。
+
+
+
