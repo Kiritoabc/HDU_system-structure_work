@@ -94,12 +94,7 @@
     <version>${struts2.version}</version>
   </dependency>
 
-  <!-- 添加对数据库的支持 -->
-  <dependency>
-    <groupId>mysql</groupId>
-    <artifactId>mysql-connector-java</artifactId>
-    <version>5.0.5</version>
-  </dependency>
+
 
   <!-- 添加对数据源的支持 -->
   <dependency>
@@ -107,7 +102,7 @@
     <artifactId>c3p0</artifactId>
     <version>0.9.1.2</version>
   </dependency>
-
+    <!-- 添加对数据库的支持 -->
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
