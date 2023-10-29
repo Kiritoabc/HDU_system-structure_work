@@ -10,6 +10,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hdu_struts2_work" />
+        <module name="SSH" />
         <module name="struts2_work" />
         <module name="hibernate" />
         <module name="Jdbc_work" />
