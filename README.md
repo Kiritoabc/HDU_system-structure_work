@@ -1,4 +1,4 @@
-# HDU_system structure_work
+# HDU的体系架构课程的作业
 
 **本次关于java的代码用于hdu的体系架构课程的作业**
 **本项目启用docker启动的mysql**
