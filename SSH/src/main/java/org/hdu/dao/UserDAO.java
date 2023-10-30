@@ -12,7 +12,7 @@ public interface UserDAO {
      * @param id
      * @return
      */
-    User get(Long id);
+    User get(int id);
 
 
     /**
@@ -31,7 +31,7 @@ public interface UserDAO {
      *  根据用户id删除用户
      * @param id
      */
-    void delete(Long id);
+    void delete(int id);
 
     /**
      *  删除用户

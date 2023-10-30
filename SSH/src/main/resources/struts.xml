@@ -9,9 +9,29 @@
 
 <!--        配置Login的action -->
         <action name="login" class="loginAction" method="execute">
-            <result name="SUCCESS">/WEB-INF/result/success.jsp</result>
+            <result name="SUCCESS">/index.jsp</result>
             <result name="fail">/WEB-INF/result/fail.jsp</result>
         </action>
+
+
+<!--        配置老师案例里面的action-->
+        <action name="user_*" class="userAction" method="{1}">
+            <result name="addUI" >/add.jsp</result>
+            <result name="add" type="redirect">/user_list.action</result>
+            <result name="updateP">/update.jsp</result>
+            <result name="update" type="redirect">/user_list.action</result>
+            <result name="delete" type="redirect">/user_list.action</result>
+            <result name="list">/list.jsp</result>
+            <result name="input">/{1}.jsp</result>
+
+            <result name="download" type="stream">
+                <param name="contentType">application/vnd.ms-excel</param>
+                <param name="contentDisposition">attachment;fileName="AllUsers.xls"</param>
+                <param name="inputName">downloadFile</param>
+            </result>
+        </action>
+
+
     </package>
 
 

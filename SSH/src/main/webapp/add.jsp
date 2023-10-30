@@ -17,10 +17,14 @@
 
 <body>
 
-<h1><font class="red">Operation List</font> </h1>
-<s:a href="user_addUI.action">User add</s:a> <br>
+<h1><font color="red">User save</font> </h1>
 
-<s:a href="user_list.action">User list</s:a> <br>
+<s:form action="user_add.action">
+    <s:textfield name="user.firstname" label="%{getText('firstname')}"></s:textfield>
+    <s:textfield name="user.lastname" label="%{getText('lastname')}"></s:textfield>
+    <s:textfield name="user.age" label="%{getText('age')}"></s:textfield>
+    <s:submit></s:submit>
+</s:form>
 
 </body>
 </html>

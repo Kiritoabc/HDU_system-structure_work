@@ -6,10 +6,37 @@ import javax.persistence.*;
 @Table(name="user")
 public class User {
     @Id
-    private Long id;
+    private int id;
     private String userName;
-
+    private String firstname;
+    private String lastname;
     private String password;
+
+    private int age;
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 
     public String getUserName() {
         return userName;
@@ -27,11 +54,11 @@ public class User {
         this.password = password;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
@@ -40,7 +67,10 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", userName='" + userName + '\'' +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
                 ", password='" + password + '\'' +
+                ", age=" + age +
                 '}';
     }
 }

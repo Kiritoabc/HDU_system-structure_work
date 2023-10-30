@@ -19,7 +19,7 @@ public class UserDAOImpl extends HibernateDaoSupport implements UserDAO {
         super.setSessionFactory(sessionFactory);
     }
     @Override
-    public User get(Long id) {
+    public User get(int id) {
         //TODO Auto-generated method stub
         return getHibernateTemplate().get(User.class, id);
     }
@@ -35,7 +35,7 @@ public class UserDAOImpl extends HibernateDaoSupport implements UserDAO {
     }
 
     @Override
-    public void delete(Long id) {
+    public void delete(int id) {
         getHibernateTemplate().delete(get(id));
     }
 
