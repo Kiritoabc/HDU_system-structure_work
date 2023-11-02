@@ -1,17 +1,25 @@
 package org.hdu.pojo;
 
+import com.alibaba.excel.annotation.ExcelIgnore;
+import com.alibaba.excel.annotation.ExcelProperty;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name="user")
 public class User {
+    @ExcelProperty("序号")
     @Id
     private int id;
+    @ExcelIgnore
     private String userName;
+    @ExcelProperty("姓")
     private String firstname;
+    @ExcelProperty("名")
     private String lastname;
+    @ExcelIgnore
     private String password;
-
+    @ExcelProperty("年龄")
     private int age;
 
     public String getFirstname() {

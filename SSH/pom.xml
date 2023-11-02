@@ -108,6 +108,14 @@
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.17</version>
     </dependency>
+
+  <!--    easyexcel   -->
+
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>easyexcel</artifactId>
+      <version>3.3.2</version>
+    </dependency>
   </dependencies>
 
 
