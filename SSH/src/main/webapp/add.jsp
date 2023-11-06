@@ -21,7 +21,7 @@
 
 <s:form action="user_add.action">
     <s:textfield name="user.firstname" label="firstname"></s:textfield>
-    <s:textfield name="user.lastname" label="lastname'"></s:textfield>
+    <s:textfield name="user.lastname" label="lastname"></s:textfield>
     <s:textfield name="user.age" label="age"></s:textfield>
     <s:submit></s:submit>
 </s:form>
