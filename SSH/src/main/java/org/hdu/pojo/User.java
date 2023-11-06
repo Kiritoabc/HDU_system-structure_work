@@ -3,13 +3,19 @@ package org.hdu.pojo;
 import com.alibaba.excel.annotation.ExcelIgnore;
 import com.alibaba.excel.annotation.ExcelProperty;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import static javax.persistence.GenerationType.IDENTITY;
 
 @Entity
 @Table(name="user")
 public class User {
     @ExcelProperty("序号")
     @Id
+    @GeneratedValue(strategy = IDENTITY)
     private int id;
     @ExcelIgnore
     private String userName;
