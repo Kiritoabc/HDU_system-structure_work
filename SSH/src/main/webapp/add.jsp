@@ -20,9 +20,9 @@
 <h1><font color="red">User save</font> </h1>
 
 <s:form action="user_add.action">
-    <s:textfield name="user.firstname" label="%{getText('firstname')}"></s:textfield>
-    <s:textfield name="user.lastname" label="%{getText('lastname')}"></s:textfield>
-    <s:textfield name="user.age" label="%{getText('age')}"></s:textfield>
+    <s:textfield name="user.firstname" label="firstname"></s:textfield>
+    <s:textfield name="user.lastname" label="lastname'"></s:textfield>
+    <s:textfield name="user.age" label="age"></s:textfield>
     <s:submit></s:submit>
 </s:form>
 
