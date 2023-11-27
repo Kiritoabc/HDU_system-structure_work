@@ -5,6 +5,7 @@
       <directory url="file://$PROJECT_DIR$/Jdbc_work/src/main/resources/archetype-resources" includeSubdirectories="true" />
     </excludeFromCompile>
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -13,9 +14,15 @@
         <module name="SSH" />
         <module name="struts2_work" />
         <module name="hibernate" />
+        <module name="hdu_springboot" />
         <module name="Jdbc_work" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="21" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="hdu_springboot" options="-parameters" />
+    </option>
   </component>
 </project>
